@@ -9,6 +9,7 @@ namespace ConsoleApp_Test
 {
     class Program
     {
+        public static string currentDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
         static void Main(string[] args)
         {
             // 請將 credentialsPath 替換為您的服務帳戶金鑰檔案路徑
