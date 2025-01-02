@@ -36,7 +36,7 @@ namespace TextToSpeechLib
             };
             _audioConfig = new AudioConfig
             {
-                AudioEncoding = AudioEncoding.Mp3,
+                AudioEncoding = AudioEncoding.Linear16,
                 SpeakingRate = 1.0
             };
         }
@@ -72,7 +72,7 @@ namespace TextToSpeechLib
             return response.AudioContent.ToByteArray();
         }
 
-        public void SynthesizeToFile(string filePath, string format = "mp3")
+        public void SynthesizeToFile(string filePath, string format = "wav")
         {
             var response = _client.SynthesizeSpeech(new SynthesizeSpeechRequest
             {

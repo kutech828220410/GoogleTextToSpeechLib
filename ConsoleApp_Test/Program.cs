@@ -38,8 +38,8 @@ namespace ConsoleApp_Test
             {
                 case "1":
                     // 輸出到檔案
-                    string filePath = "C:\\output.mp3";
-                    tts.SynthesizeToFile(filePath, "mp3");
+                    string filePath = "C:\\output.wav";
+                    tts.SynthesizeToFile(filePath, "wav");
                     Console.WriteLine($"語音已成功儲存到檔案: {filePath}");
                     break;
 
